@@ -1,0 +1,10 @@
+extensions:
+	dibi: Dibi\Bridges\Nette\DibiExtension22
+
+dibi:
+	host: db
+	username: super
+	password: pass
+	database: app
+	driver: mysqli
+	lazy: true
