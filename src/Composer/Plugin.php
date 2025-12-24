@@ -14,12 +14,6 @@ use Drago\Installer;
 
 final class Plugin implements PluginInterface, EventSubscriberInterface
 {
-	public function activate(Composer $composer, IOInterface $io): void
-	{
-		// TODO: Implement activate() method.
-	}
-
-
 	public static function getSubscribedEvents(): array
 	{
 		return [
@@ -29,12 +23,9 @@ final class Plugin implements PluginInterface, EventSubscriberInterface
 	}
 
 
-	public function onPackageInstall(PackageEvent $event): void
+	public function activate(Composer $composer, IOInterface $io)
 	{
-		$package = $event->getOperation()->getPackage();
-		if ($package->getName() === 'drago-ex/project-db') {
-			Installer::install();
-		}
+		// TODO: Implement activate() method.
 	}
 
 
@@ -47,5 +38,14 @@ final class Plugin implements PluginInterface, EventSubscriberInterface
 	public function uninstall(Composer $composer, IOInterface $io)
 	{
 		// TODO: Implement uninstall() method.
+	}
+
+
+	public function onPackageInstall(PackageEvent $event): void
+	{
+		$package = $event->getOperation()->getPackage();
+		if ($package->getName() === 'drago-ex/project-db') {
+			Installer::install();
+		}
 	}
 }
