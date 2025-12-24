@@ -1,21 +1,19 @@
 {
-  "name": "drago-ex/project-db",
-  "type": "library",
-  "require": {
-	"php": ">=8.3 <9",
-	"drago-ex/database": "^2.0"
-  },
-  "autoload": {
-	"psr-4": {
-	  "Drago\\": "src/"
+	"name": "drago-ex/project-db",
+	"type": "composer-plugin",
+	"require": {
+		"php": ">=8.3 <9",
+		"drago-ex/database": "^2.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Drago\\": "src/"
+		}
+	},
+	"extra": {
+		"class": "Drago\\Composer\\Plugin"
+	},
+	"require-dev": {
+		"composer/composer": "^2.9"
 	}
-  },
-  "scripts": {
-	"post-install-cmd": [
-	  "@php bin/install.php"
-	],
-	"post-update-cmd": [
-	  "@php bin/install.php"
-	]
-  }
 }
