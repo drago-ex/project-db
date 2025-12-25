@@ -13,17 +13,17 @@ final class Installer
 
 		self::copy(
 			__DIR__ . '/../resources/docker/docker-compose-db.yml',
-			$root . '/docker-compose-db.yml'
+			$root . '/docker-compose-db.yml',
 		);
 
 		self::copy(
 			__DIR__ . '/../resources/docker/Dockerfile-db',
-			$root . '/docker/Dockerfile-db'
+			$root . '/docker/Dockerfile-db',
 		);
 
 		self::copy(
 			__DIR__ . '/../resources/app/db.neon',
-			$root . '/app/db.neon'
+			$root . '/app/db.neon',
 		);
 
 		echo "[project-db] Database support installed\n";
