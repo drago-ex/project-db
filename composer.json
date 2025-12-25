@@ -9,11 +9,11 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Drago\\\\DatabasePlugin\\\\": "src/"
+			"DragoDatabasePlugin\\": "src/"
 		}
 	},
 	"extra": {
-		"class": "Drago\\\\DatabasePlugin\\\\Composer\\\\Plugin"
+		"class": "DragoDatabasePlugin\\Composer\\Plugin"
 	},
 	"require-dev": {
 		"composer/composer": "^2.9"
