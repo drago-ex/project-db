@@ -44,7 +44,7 @@ final class Installer
 			return;
 		}
 
-		@mkdir(dirname($to), 0777, true);
+		@mkdir(dirname($to), 0o777, true);
 		copy($from, $to);
 	}
 }
