@@ -1,6 +1,14 @@
 # docker service
 services:
 
+  # php server update
+  server:
+    build:
+      context: docker
+      dockerfile: Dockerfile-db
+    image: php-server
+
+
   # database
   db:
     image: library/mariadb:latest
