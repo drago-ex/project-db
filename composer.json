@@ -1,6 +1,7 @@
 {
 	"name": "drago-ex/project-db",
 	"type": "composer-plugin",
+	"description": "The package extends the Drago Project to include database work.",
 	"require": {
 		"php": ">=8.3 <9",
 		"drago-ex/database": "^2.0",
