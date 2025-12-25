@@ -8,6 +8,7 @@ The package extends the Drago Project to include database work.
 ```bash
 composer config --no-plugins allow-plugins.drago-ex/project-db true
 composer require drago-ex/project-db
+composer remove drago-ex/project-db --no-interaction
 ```
 
 ## Docker update
