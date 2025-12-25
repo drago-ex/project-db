@@ -13,7 +13,7 @@ final class Installer
 
 		self::copy(
 			__DIR__ . '/../resources/docker/docker-compose-db.yml',
-			$root . '/docker/docker-compose-db.yml'
+			$root . '/docker-compose-db.yml'
 		);
 
 		self::copy(
