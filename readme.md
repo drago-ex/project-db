@@ -13,7 +13,6 @@ The package does the following:
 ```bash
 composer config --no-plugins allow-plugins.drago-ex/project-db true
 composer require drago-ex/project-db
-composer remove drago-ex/project-db --no-interaction
 ```
 
 ## Docker Setup
