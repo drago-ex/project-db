@@ -1,5 +1,5 @@
 ## Drago Project with a database
-The package extends the Drago Project to include database work. 
+The package extends the Drago Project to include database work.
 
 The package does the following:
 - Copies a configured Neon file with database settings preconfigured for Docker.
