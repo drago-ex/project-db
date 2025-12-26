@@ -1,8 +1,6 @@
 ## Drago Project with a database
 The package extends the Drago Project to include database work. 
 
-It automates the setup of database configuration and Docker support, so you can start working with a database in your project immediately.
-
 The package does the following:
 - Copies a configured Neon file with database settings preconfigured for Docker.
 - Adds Docker files for database setup.
@@ -18,7 +16,7 @@ composer require drago-ex/project-db
 composer remove drago-ex/project-db --no-interaction
 ```
 
-## Docker update
+## Docker Setup
 ```bash
 docker-compose -f docker-compose-db.yml build
 ```
