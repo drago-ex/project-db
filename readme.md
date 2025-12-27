@@ -6,6 +6,8 @@ The package extends the Drago Project to include database work.
 
 ## Requirements
 - PHP >= 8.3
+- Nette Framework
+- Docker
 - Drago Project core packages
 
 ## The package does the following
