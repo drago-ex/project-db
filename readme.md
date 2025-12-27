@@ -17,7 +17,6 @@ The package extends the Drago Project to include database work.
 
 ## Install
 ```bash
-composer config --no-plugins allow-plugins.drago-ex/project-db true
 composer require drago-ex/project-db
 ```
 

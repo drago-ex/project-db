@@ -1,19 +1,22 @@
 {
 	"name": "drago-ex/project-db",
-	"type": "composer-plugin",
+	"type": "drago-project-resource",
 	"description": "The package extends the Drago Project to include database work.",
 	"require": {
 		"php": ">=8.3 <9",
 		"drago-ex/database": "^2.0",
 		"composer-plugin-api": "^2.3"
 	},
-	"autoload": {
-		"psr-4": {
-			"DragoDatabasePlugin\\": "src/"
-		}
-	},
 	"extra": {
-		"class": "DragoDatabasePlugin\\Composer\\Plugin"
+		"drago-project": {
+			"install": {
+				"copy": {
+					"resources/app": "app",
+					"resources/docker/Dockerfile-db": "docker",
+					"resources/docker/docker-compose-db.yml": ""
+				}
+			}
+		}
 	},
 	"require-dev": {
 		"composer/composer": "^2.9"
