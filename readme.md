@@ -9,7 +9,7 @@ The package extends the Drago Project to include database work.
 - Nette Framework
 - Drago Project core packages
 
-The package does the following:
+## The package does the following
 - Copies a configured Neon file with database settings preconfigured for Docker.
 - Adds Docker files for database setup.
 - Integrates Dibi for database interaction.
